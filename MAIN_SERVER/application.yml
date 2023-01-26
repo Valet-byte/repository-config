@@ -1,0 +1,19 @@
+server:
+  port: 3698
+
+spring:
+
+  kafka:
+    bootstrap-servers:
+      - localhost:8084
+      - localhost:8083
+      - localhost:8085
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      group-id: streaming
+
+  datasource:
+    url: jdbc:postgresql://localhost:5551/postgres
+    username: postgres
+    password: postgres

@@ -1,0 +1,26 @@
+server:
+  port: 2589
+
+spring:
+
+  kafka:
+    bootstrap-servers:
+      - localhost:8084
+      - localhost:8083
+      - localhost:8085
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      group-id: streaming
+
+  datasource:
+    url: jdbc:postgresql://localhost:5554/postgres
+    username: postgres
+    password: postgres
+
+
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+  jpa:
+    hibernate:
+      ddl-auto: none

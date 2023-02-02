@@ -1,0 +1,21 @@
+server:
+  port: 7896
+
+spring:
+
+  security:
+    user:
+      password: MY_VERY_SECRET_PASSWORD
+      name: MU_USERNAME
+
+  application:
+    name: "SAVE_SERVICE"
+
+  datasource:
+    url: jdbc:postgresql://localhost:5553/postgres
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: none

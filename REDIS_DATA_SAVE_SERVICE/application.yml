@@ -1,0 +1,22 @@
+server:
+  port: 3578
+
+spring:
+  application:
+    name: "REDIS_DATA_SAVE_SERVICE"
+
+  kafka:
+    bootstrap-servers:
+      - localhost:8084
+      - localhost:8083
+      - localhost:8085
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      group-id: streaming
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: "my_master_password"

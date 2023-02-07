@@ -19,3 +19,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
+
+user:
+  password:
+    min_length: 6
+  name:
+    min_length: 5

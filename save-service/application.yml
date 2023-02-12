@@ -9,7 +9,7 @@ spring:
       name: MU_USERNAME
 
   application:
-    name: "SAVE_SERVICE"
+    name: "save-service"
 
   datasource:
     url: jdbc:postgresql://localhost:5553/postgres

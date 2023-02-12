@@ -12,7 +12,7 @@ spring:
     name: "save-service"
 
   datasource:
-    url: jdbc:postgresql://localhost:5553/postgres
+    url: jdbc:postgresql://localhost:5000/postgres
     username: postgres
     password: postgres
 

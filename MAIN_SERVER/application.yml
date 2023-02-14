@@ -1,6 +1,12 @@
 server:
   port: 3698
 
+  
+eureka:
+  instance:
+    hostname: eureka
+
+
 spring:
 
   application:

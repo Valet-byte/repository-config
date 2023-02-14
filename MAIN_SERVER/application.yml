@@ -14,6 +14,6 @@ spring:
       group-id: streaming
 
   datasource:
-    url: jdbc:postgresql://localhost:5551/postgres
+    url: jdbc:postgresql://patroni-1:5551/postgres
     username: postgres
     password: postgres

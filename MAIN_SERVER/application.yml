@@ -1,11 +1,15 @@
 server:
   port: 3698
 
-  
-eureka:
-  instance:
-    hostname: eureka
 
+eureka:
+  client:
+    service-url:
+<<<<<<< HEAD
+      defaultZone: http://eureka:8761/eureka/
+=======
+      defaultZone: http://eureka:8761/
+>>>>>>> 9318f7259e72cb51a789c015369b2bd65256ef07
 
 spring:
 

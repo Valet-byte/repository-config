@@ -1,15 +1,22 @@
 server:
   port: 3578
 
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
+
+
 spring:
   application:
     name: "REDIS_DATA_SAVE_SERVICE"
 
   kafka:
     bootstrap-servers:
-      - localhost:8084
-      - localhost:8083
-      - localhost:8085
+      - kafka:8083
+      - kafka2:8083
+      - kafka3:8083
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     consumer:
@@ -17,6 +24,6 @@ spring:
 
   data:
     redis:
-      host: localhost
+      host: redis-master
       port: 6379
       password: "my_master_password"

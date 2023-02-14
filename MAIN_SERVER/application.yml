@@ -3,11 +3,20 @@ server:
 
 spring:
 
+  application:
+    name: MAIN_SERVER
+
+  data:
+    redis:
+      host: redis-replica
+      port: 6379
+      password: my_replica_password
+
   kafka:
     bootstrap-servers:
-      - localhost:8084
-      - localhost:8083
-      - localhost:8085
+      - kafka:8083
+      - kafka2:8083
+      - kafka3:8083
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     consumer:
@@ -17,3 +26,7 @@ spring:
     url: jdbc:postgresql://patroni1:5432/postgres
     username: postgres
     password: postgres
+
+save-service:
+  login: MU_USERNAME
+  password: MY_VERY_SECRET_PASSWORD

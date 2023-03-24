@@ -26,6 +26,6 @@ spring:
       password: my_replica_password
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5552/postgres
     username: postgres
     password: postgres

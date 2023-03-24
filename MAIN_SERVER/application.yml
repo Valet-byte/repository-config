@@ -21,8 +21,8 @@ spring:
   kafka:
     bootstrap-servers:
       - localhost:8083
-      - localhost:8083
-      - localhost:8083
+      - localhost:8084
+      - localhost:8085
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     consumer:
